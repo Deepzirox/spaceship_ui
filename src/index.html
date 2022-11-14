@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="box">
+    <div class="main">
+      
+      <div class="server_status">
+        <button>Conectar servidor</button>
+        <button>Desconectar servidor</button>
+        <button>Ver status servidor</button>
+        <br>
+        <br>
+        <h3>Game server admin 0.1 by Xiro</h3>
+        <hr color="green">
+      </div>
+
+      <div class="board">
+        HTTP RESPONSE:
+      </div>
+
+
+    </div>
+    <div class="handlers">
+
+      <br>
+      <h4>Administrador de modelos</h4>
+      <br>
+      
+      <div class="creacion">
+        
+        <p>Generar modelo</p>
+        <select name="Modelo">
+          <option value="Personaje" selected>Personaje</option>
+          <option value="Item">Item</option>
+          <option value="Habilidad">Habilidad</option>
+        </select>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+          Crear modelo
+        </button>
+      </div>
+
+
+      <div class="listar">
+        <br>
+        <p>Listar Modelos por ID</p>
+        <input type="text" placeholder="ID">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-success">
+          Listar
+        </button>
+
+        
+      </div>
+
+
+
+      <div class="eliminar">
+        <br>
+        <p>Eliminar Modelo por ID</p>
+        <input type="text" placeholder="ID">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-success">
+          Eliminar Modelo
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!--Boostrap Modal-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

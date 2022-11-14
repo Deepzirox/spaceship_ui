@@ -1,0 +1,99 @@
+ body {
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    color: hsl(118, 100%, 48%);
+ }
+ 
+
+ /* Flex box y estilo base*/
+
+ .box {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .box .main {
+    width: 70%;
+    height: auto;
+    border-right: medium dashed rgb(0, 255, 102);
+ }
+
+ .box .handlers {
+    text-align: center;
+    width: 30%;
+    height: 580px;
+    border-top: medium dashed rgb(0, 255, 102);
+    border-bottom: medium dashed rgb(0, 255, 102);
+ }
+
+ /* Botones para manejar el estado del servidor */
+
+ .box .main .server_status  {
+    margin-left: 0%;
+    text-align: center;
+ }
+
+ .box .main .server_status > button {
+    width: 29%;
+    background: black;
+    color: #00ff00;
+    border: solid rgb(0, 255, 102);
+ }
+
+
+ /* Input para manejar la creacion de los modelos en handlers*/
+
+ .box .handlers .creacion {
+    text-align: center;
+ }
+
+ .box .handlers .creacion > select {
+    width: 80%;
+    background: black;
+    color: #00ff00;
+    border: solid rgb(0, 255, 102);
+ }
+
+ .box .handlers .creacion > button {
+    margin-top: 20px;
+ }
+
+
+ /*Handlers - eliminar modelo*/
+
+ .box .handlers .eliminar > input {
+    width: 80%;
+    background: black;
+    color: #00ff00;
+    border: solid rgb(0, 255, 102);
+ }
+
+ .box .handlers .eliminar > button {
+    margin-top: 20px;
+ }
+
+ .box .handlers .listar > input {
+    width: 80%;
+    background: black;
+    color: #00ff00;
+    border: solid rgb(0, 255, 102);
+ }
+
+ .box .handlers .listar > button {
+    margin-top: 20px;
+ }
+
+
+
+
+
+ /*El board es donde se muestran todos los resultados*/
+ .board {
+    width: 95%;
+    height: 400px;
+    background-color: white;
+    color: black;
+    margin-left: 2%;
+    padding: 3%;
+ }
